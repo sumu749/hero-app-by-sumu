@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import appsData from "../../Utility/appsData.json";
 import { Download } from "lucide-react";
 import AppError from "../../assets/App-Error.png";
+import Loading from "../../Components/Loading/Loading";
 
 const Apps = () => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -52,9 +53,7 @@ const Apps = () => {
                         <img src={AppError} alt="Error" />
                     </div>
                 ) : isSearching ? (
-                    <div className="flex justify-center items-center py-20">
-                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-                    </div>
+                    <Loading />
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {filteredApps.map((app) => (
