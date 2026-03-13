@@ -5,6 +5,7 @@ import { Star } from "lucide-react";
 import { MessageSquareDiff } from "lucide-react";
 import appsData from "../../Utility/appsData.json";
 import { toast } from "react-toastify";
+import ErrorPage from "../ErrorPage/ErrorPage";
 import {
     BarChart,
     Bar,
@@ -21,7 +22,7 @@ const AppDetails = () => {
     const [installed, setInstalled] = useState(false);
 
     if (!app) {
-        return <div>App not found</div>;
+        return <ErrorPage />;
     }
 
     const handleInstall = () => {
