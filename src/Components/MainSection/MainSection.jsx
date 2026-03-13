@@ -1,7 +1,11 @@
 import React from "react";
 
 const MainSection = () => {
-    return <h1>Main Section</h1>;
+    return (
+        <div>
+            <h1>Main Section</h1>
+        </div>
+    );
 };
 
 export default MainSection;

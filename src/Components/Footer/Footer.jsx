@@ -1,21 +1,22 @@
 import React from "react";
 import { Facebook, Twitter, Linkedin, Github, Mail } from "lucide-react";
 import Logo from "../../assets/logo.png";
+import { Link } from "react-router";
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-900 text-gray-300 mt-16">
+        <footer className="bg-gray-900 text-gray-300 ">
             <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8 ">
                 <div>
-                    <a className="flex">
+                    <Link to="/" className="flex mb-4">
                         <img src={Logo} alt="Logo" className="h-8 w-8 mr-2 " />
                         <span className="text-[#713ae6] text-2xl font-bold">
                             HERO.IO
                         </span>
-                    </a>
+                    </Link>
                     <p className="text-sm">
-                        Building modern and scalable web applications with clean
-                        UI and powerful technology.
+                        Building modern and scalable Web Applications and Mobile
+                        Apps with clean UI and powerful technology.
                     </p>
                 </div>
 

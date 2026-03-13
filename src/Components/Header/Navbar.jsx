@@ -1,17 +1,46 @@
 import { Github } from "lucide-react";
 import React from "react";
+
 import Logo from "../../assets/logo.png";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
     const Links = (
         <>
-            <li className="mr-4 text-xl font-semibold">Home</li>
-            <li className="mr-4 text-xl font-semibold">Apps</li>
-            <li className="mr-4 text-xl font-semibold">Installation</li>
+            <li>
+                <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                        `mr-4 text-xl font-semibold ${isActive ? "text-[#713ae6]" : ""}`
+                    }
+                >
+                    Home
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to="/apps"
+                    className={({ isActive }) =>
+                        `mr-4 text-xl font-semibold ${isActive ? "text-[#713ae6]" : ""}`
+                    }
+                >
+                    Apps
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to="/installation"
+                    className={({ isActive }) =>
+                        `mr-4 text-xl font-semibold ${isActive ? "text-[#713ae6]" : ""}`
+                    }
+                >
+                    Installation
+                </NavLink>
+            </li>
         </>
     );
     return (
-        <div className="navbar px-20 bg-base-100 shadow-sm">
+        <div className="navbar sticky px-20 bg-base-100 shadow-sm">
             <div className=" navbar-start">
                 <div className="dropdown">
                     <div
@@ -42,18 +71,21 @@ const Navbar = () => {
                         {Links}
                     </ul>
                 </div>
-                <a className="flex">
+                <Link to="/" className="flex">
                     <img src={Logo} alt="Logo" className="h-8 w-8 mr-2 " />
                     <span className="text-[#713ae6] text-2xl font-bold">
                         HERO.IO
                     </span>
-                </a>
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">{Links}</ul>
             </div>
             <div className="navbar-end">
-                <a className="btn rounded-md bg-linear-to-br from-[#713ae6] to-[#9c60f1] hover:opacity-90 transition-opacity text-white">
+                <a
+                    href="https://github.com/sumu749"
+                    className="btn rounded-md bg-linear-to-br from-[#713ae6] to-[#9c60f1] hover:opacity-90 transition-opacity text-white"
+                >
                     {<Github />}Contribute
                 </a>
             </div>
