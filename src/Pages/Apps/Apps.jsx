@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router";
 import appsData from "../../Utility/appsData.json";
 import { Download } from "lucide-react";
@@ -6,9 +6,22 @@ import AppError from "../../assets/App-Error.png";
 
 const Apps = () => {
     const [searchTerm, setSearchTerm] = useState("");
-    const filteredApps = appsData.filter((app) =>
-        app.title.toLowerCase().includes(searchTerm.toLowerCase()),
-    );
+    const [isSearching, setIsSearching] = useState(false);
+    const [filteredApps, setFilteredApps] = useState(appsData);
+
+    useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setIsSearching(true);
+        const timer = setTimeout(() => {
+            const filtered = appsData.filter((app) =>
+                app.title.toLowerCase().includes(searchTerm.toLowerCase()),
+            );
+            setFilteredApps(filtered);
+            setIsSearching(false);
+        }, 300); // Simulate search delay
+
+        return () => clearTimeout(timer);
+    }, [searchTerm]);
 
     return (
         <div className="bg-base-200">
@@ -34,9 +47,13 @@ const Apps = () => {
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
                 </div>
-                {filteredApps.length === 0 ? (
+                {filteredApps.length === 0 && !isSearching ? (
                     <div className="flex flex-col items-center mx-auto">
                         <img src={AppError} alt="Error" />
+                    </div>
+                ) : isSearching ? (
+                    <div className="flex justify-center items-center py-20">
+                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">

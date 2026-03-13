@@ -6,32 +6,40 @@ import Apps from "../Pages/Apps/Apps";
 import Installation from "../Pages/Installation/Installation";
 import AppDetails from "../Pages/AppDetails/AppDetails";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+    [
+        {
+            path: "/",
+            Component: Root,
+            errorElement: ErrorPage,
+            children: [
+                {
+                    index: true,
+                    Component: Home,
+                },
+                {
+                    path: "apps",
+                    Component: Apps,
+                },
+                {
+                    path: "apps/:id",
+                    Component: AppDetails,
+                },
+                {
+                    path: "installation",
+                    Component: Installation,
+                },
+                {
+                    path: "*",
+                    Component: ErrorPage,
+                },
+            ],
+        },
+    ],
     {
-        path: "/",
-        Component: Root,
-        errorElement: ErrorPage,
-        children: [
-            {
-                index: true,
-                Component: Home,
-            },
-            {
-                path: "apps",
-                Component: Apps,
-            },
-            {
-                path: "apps/:id",
-                Component: AppDetails,
-            },
-            {
-                path: "installation",
-                Component: Installation,
-            },
-            {
-                path: "*",
-                Component: ErrorPage,
-            },
-        ],
+        future: {
+            v7_startTransition: true,
+            v7_relativeSplatPath: true,
+        },
     },
-]);
+);
