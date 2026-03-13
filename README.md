@@ -1,16 +1,68 @@
-# React + Vite
+# Hero Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Hero Apps is a modern web application built with React that showcases a collection of mobile applications. It provides users with detailed information about various apps including descriptions, ratings, reviews, download counts, and company details. The app features a clean, responsive design with search functionality to help users discover and explore applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## React Compiler
+- **Frontend Framework:** React 19.2.0
+- **Build Tool:** Vite 7.3.1
+- **Styling:** Tailwind CSS 4.2.1, DaisyUI 5.5.19
+- **Routing:** React Router 7.13.1
+- **HTTP Client:** Axios 1.13.6
+- **Icons:** FontAwesome 7.2.0, Lucide React 0.577.0
+- **Charts:** Recharts 3.8.0
+- **Notifications:** React Toastify 11.0.5
+- **Linting:** ESLint 9.39.1
+- **Development:** TypeScript types for React components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Browse and search through a collection of applications
+- View detailed app information including ratings and reviews
+- Responsive design that works on all devices
+- Modern UI with gradient backgrounds and clean layouts
+- Fast loading with Vite's optimized build system
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+### Linting
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```
+src/
+├── Components/
+│   ├── Banner/
+│   ├── Footer/
+│   ├── Header/
+│   ├── Hero/
+│   ├── Loading/
+│   └── MainSection/
+├── Pages/
+│   ├── AppDetails/
+│   ├── Apps/
+│   ├── ErrorPage/
+│   ├── Home/
+│   ├── Installation/
+│   └── Root/
+├── Routes/
+├── Utility/
+│   └── appsData.json
+└── assets/
+```
