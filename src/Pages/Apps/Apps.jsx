@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router";
 import appsData from "../../Utility/appsData.json";
 import { Download } from "lucide-react";
+import AppError from "../../assets/App-Error.png";
 
 const Apps = () => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -21,7 +22,7 @@ const Apps = () => {
                         for Millions
                     </p>
                 </div>
-                <div className="flex justify-between items-center mb-8">
+                <div className="flex  justify-between items-center mb-8">
                     <span className="text-xl font-semibold">
                         Total Apps: {appsData.length}
                     </span>
@@ -34,9 +35,9 @@ const Apps = () => {
                     />
                 </div>
                 {filteredApps.length === 0 ? (
-                    <p className="text-center text-gray-500 text-2xl">
-                        No App Found
-                    </p>
+                    <div className="flex flex-col items-center mx-auto">
+                        <img src={AppError} alt="Error" />
+                    </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {filteredApps.map((app) => (
