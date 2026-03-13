@@ -34,7 +34,7 @@ const Navbar = () => {
                         `mr-4 text-xl font-semibold ${isActive ? "text-[#713ae6]" : ""}`
                     }
                 >
-                    Installation
+                    My Installation
                 </NavLink>
             </li>
         </>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Download } from "lucide-react";
 import { Star } from "lucide-react";
@@ -21,13 +21,30 @@ const AppDetails = () => {
     const app = appsData.find((app) => app.id === parseInt(id));
     const [installed, setInstalled] = useState(false);
 
+    useEffect(() => {
+        const installedApps = JSON.parse(
+            localStorage.getItem("installedApps") || "[]",
+        );
+        setInstalled(installedApps.includes(parseInt(id)));
+    }, [id]);
+
     if (!app) {
         return <ErrorPage />;
     }
 
     const handleInstall = () => {
-        setInstalled(true);
-        toast.success("App installed successfully!");
+        const installedApps = JSON.parse(
+            localStorage.getItem("installedApps") || "[]",
+        );
+        if (!installedApps.includes(app.id)) {
+            installedApps.push(app.id);
+            localStorage.setItem(
+                "installedApps",
+                JSON.stringify(installedApps),
+            );
+            setInstalled(true);
+            toast.success("App installed successfully!");
+        }
     };
 
     return (
