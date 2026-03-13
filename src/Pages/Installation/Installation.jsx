@@ -7,6 +7,7 @@ import AppError from "../../assets/App-Error.png";
 
 const Installation = () => {
     const [installedApps, setInstalledApps] = useState([]);
+    const [sortOrder, setSortOrder] = useState("");
 
     useEffect(() => {
         const installedIds = JSON.parse(
@@ -18,6 +19,15 @@ const Installation = () => {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setInstalledApps(installed);
     }, []);
+
+    const sortedApps = [...installedApps].sort((a, b) => {
+        if (sortOrder === "High-Low") {
+            return b.downloads - a.downloads;
+        } else if (sortOrder === "Low-High") {
+            return a.downloads - b.downloads;
+        }
+        return 0;
+    });
 
     const handleUninstall = (appId) => {
         const installedIds = JSON.parse(
@@ -40,10 +50,23 @@ const Installation = () => {
                         Explore All Trending Apps on the Market developed by us
                     </p>
                 </div>
-                <div className="mb-8 text-center">
+                <div className="flex justify-between items-center mb-8">
                     <span className="text-xl font-semibold">
                         Installed Apps: {installedApps.length}
                     </span>
+                    {installedApps.length > 0 && (
+                        <select
+                            value={sortOrder}
+                            onChange={(e) => setSortOrder(e.target.value)}
+                            className="select select-bordered w-48"
+                        >
+                            <option value="" disabled>
+                                Sort By Downloads
+                            </option>
+                            <option value="High-Low">High-Low</option>
+                            <option value="Low-High">Low-High</option>
+                        </select>
+                    )}
                 </div>
                 {installedApps.length === 0 ? (
                     <div className="flex flex-col items-center mx-auto">
@@ -55,7 +78,7 @@ const Installation = () => {
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        {installedApps.map((app) => (
+                        {sortedApps.map((app) => (
                             <div
                                 key={app.id}
                                 className="card bg-base-100 shadow-sm w-full hover:shadow-md transition-shadow"
