@@ -25,6 +25,7 @@ const AppDetails = () => {
         const installedApps = JSON.parse(
             localStorage.getItem("installedApps") || "[]",
         );
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setInstalled(installedApps.includes(parseInt(id)));
     }, [id]);
 
@@ -56,7 +57,7 @@ const AppDetails = () => {
                         <img
                             src={app.image}
                             alt={app.title}
-                            className="w-80 h-80 mb-4 md:mb-0 md:mr-6"
+                            className="w-80 h-80 mb-4 md:mb-0 md:mr-6 mx-auto md:mx-0"
                         />
                         <div className="flex-1">
                             <div className="mb-4">
@@ -72,21 +73,21 @@ const AppDetails = () => {
                             </div>
                             <hr className="text-gray-400" />
                             <div className="flex gap-8 mt-8 items-center mb-8">
-                                <div className=" flex flex-col items-center ">
+                                <div className="flex flex-col items-center">
                                     <Star />
                                     <p className="text-xl font-semibold mb-2 mt-2">
                                         Average Ratings
                                     </p>
                                     <h2>{app.ratingAvg}</h2>
                                 </div>
-                                <div className="flex flex-col items-center ">
+                                <div className="flex flex-col items-center">
                                     <Download />
                                     <p className="text-xl font-semibold mb-2 mt-2">
                                         Downloads
                                     </p>
                                     <h2>{app.downloads}</h2>
                                 </div>
-                                <div className="flex flex-col items-center ">
+                                <div className="flex flex-col items-center">
                                     <MessageSquareDiff />
                                     <p className="text-xl font-semibold mb-2 mt-2">
                                         Total Reviews
@@ -94,13 +95,15 @@ const AppDetails = () => {
                                     <h2>{app.reviews}</h2>
                                 </div>
                             </div>
-                            <button
-                                onClick={handleInstall}
-                                disabled={installed}
-                                className={`px-4 py-2 rounded ${installed ? "bg-gray-400 cursor-not-allowed" : "bg-linear-to-br from-[#713ae6] to-[#9c60f1] hover:opacity-90 transition-opacity text-white px-6 py-3"}`}
-                            >
-                                {installed ? "Installed" : "Install"}
-                            </button>
+                            <div className="text-center md:text-left">
+                                <button
+                                    onClick={handleInstall}
+                                    disabled={installed}
+                                    className={`px-4 py-2 rounded ${installed ? "bg-gray-400 cursor-not-allowed" : "bg-linear-to-br from-[#713ae6] to-[#9c60f1] hover:opacity-90 transition-opacity text-white px-6 py-3"}`}
+                                >
+                                    {installed ? "Installed" : "Install"}
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
