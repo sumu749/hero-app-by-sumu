@@ -1,0 +1,272 @@
+[
+    {
+        "image": "https://play-lh.googleusercontent.com/POgn4x_Jrz18VxrjbZC88ijwZJwmOjs2flX1KC0Kz7IF1oncFoKOMsWfFKntJjc20BRJ=w240-h480-rw",
+        "title": "Super Calculator",
+        "companyName": "TechTools Inc.",
+        "id": 1,
+        "description": "A powerful calculator app with advanced functions.",
+        "size": 15,
+        "reviews": 1200,
+        "ratingAvg": 4.5,
+        "downloads": 50000,
+        "ratings": [
+            { "name": "1 star", "count": 50 },
+            { "name": "2 star", "count": 100 },
+            { "name": "3 star", "count": 200 },
+            { "name": "4 star", "count": 400 },
+            { "name": "5 star", "count": 450 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/FPBTuf-13tdmDg1cLjBbJlxeI0VyDQc6ATe25u7yw-sdTweLU_pO_0JR3xRI0aKlSeU=w240-h480-rw",
+        "title": "Weather Wizard",
+        "companyName": "Climate Corp",
+        "id": 2,
+        "description": "Accurate weather forecasts and alerts.",
+        "size": 20,
+        "reviews": 800,
+        "ratingAvg": 4.2,
+        "downloads": 30000,
+        "ratings": [
+            { "name": "1 star", "count": 30 },
+            { "name": "2 star", "count": 80 },
+            { "name": "3 star", "count": 150 },
+            { "name": "4 star", "count": 300 },
+            { "name": "5 star", "count": 240 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/B1TuYuv1aKL5B0i8YPJ8F-sFsCAkI0BKiXDtuBscbVhZBNKWi1oZV99nRd72LsOPBDw=w240-h480-rw",
+        "title": "Fitness Tracker",
+        "companyName": "HealthHub",
+        "id": 3,
+        "description": "Track your workouts and health metrics.",
+        "size": 25,
+        "reviews": 1500,
+        "ratingAvg": 4.7,
+        "downloads": 75000,
+        "ratings": [
+            { "name": "1 star", "count": 20 },
+            { "name": "2 star", "count": 50 },
+            { "name": "3 star", "count": 100 },
+            { "name": "4 star", "count": 400 },
+            { "name": "5 star", "count": 930 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/rx6aZ3fsk-3YwGSVzLanHDKx9IC4JLzD-oK-vjoZO0IjCnz19afCjNkqr1oGoKT6SP0=w240-h480-rw",
+        "title": "Music Player Pro",
+        "companyName": "AudioTech",
+        "id": 4,
+        "description": "High-quality music playback with playlists.",
+        "size": 30,
+        "reviews": 2000,
+        "ratingAvg": 4.8,
+        "downloads": 100000,
+        "ratings": [
+            { "name": "1 star", "count": 10 },
+            { "name": "2 star", "count": 40 },
+            { "name": "3 star", "count": 80 },
+            { "name": "4 star", "count": 500 },
+            { "name": "5 star", "count": 1370 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/3XK8TW_5lEupajJNMNSX_775s1Wgjibp20n-GeJhgh_rT_ExQz_Pj9R703Iy7vo28OU=w240-h480-rw",
+        "title": "Photo Editor",
+        "companyName": "ImageWorks",
+        "id": 5,
+        "description": "Edit photos with professional tools.",
+        "size": 40,
+        "reviews": 1800,
+        "ratingAvg": 4.3,
+        "downloads": 60000,
+        "ratings": [
+            { "name": "1 star", "count": 60 },
+            { "name": "2 star", "count": 120 },
+            { "name": "3 star", "count": 240 },
+            { "name": "4 star", "count": 600 },
+            { "name": "5 star", "count": 780 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/JkYolPNuRAlrXEI9vlk-XOid3VFJ0IPjDj2eM_xrriuE3Zu8IX9cuMkI7JOTw1upNxbW=w240-h480-rw",
+        "title": "Task Manager",
+        "companyName": "Productivity Plus",
+        "id": 6,
+        "description": "Organize your tasks and projects efficiently.",
+        "size": 18,
+        "reviews": 900,
+        "ratingAvg": 4.1,
+        "downloads": 25000,
+        "ratings": [
+            { "name": "1 star", "count": 40 },
+            { "name": "2 star", "count": 100 },
+            { "name": "3 star", "count": 200 },
+            { "name": "4 star", "count": 300 },
+            { "name": "5 star", "count": 260 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/ec-X7msRTIM6AzRjPnjAsUOL9Fa8FgdPHBzT-rqIzvtbWm8mxQfTIG-h4_DmEG-9RxI=w240-h480-rw",
+        "title": "Recipe Finder",
+        "companyName": "Culinary Apps",
+        "id": 7,
+        "description": "Discover and save delicious recipes.",
+        "size": 22,
+        "reviews": 1100,
+        "ratingAvg": 4.4,
+        "downloads": 40000,
+        "ratings": [
+            { "name": "1 star", "count": 35 },
+            { "name": "2 star", "count": 70 },
+            { "name": "3 star", "count": 140 },
+            { "name": "4 star", "count": 350 },
+            { "name": "5 star", "count": 505 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/xfWPV6nDpeePC00uFWxHWRVAdsDE7u-xSMHxYAKNl1GgJBgxDkM-soj4b3HioWVDvw=w240-h480-rw",
+        "title": "Language Learner",
+        "companyName": "EduLang",
+        "id": 8,
+        "description": "Learn new languages with interactive lessons.",
+        "size": 35,
+        "reviews": 1600,
+        "ratingAvg": 4.6,
+        "downloads": 80000,
+        "ratings": [
+            { "name": "1 star", "count": 25 },
+            { "name": "2 star", "count": 60 },
+            { "name": "3 star", "count": 120 },
+            { "name": "4 star", "count": 500 },
+            { "name": "5 star", "count": 895 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/DqAKT8mJJWAQMzPuNTFL1CyhwVJkCEfQlv8CGlh7tNLPe81h92T-SwWG6UQLXydpEBNz=w240-h480-rw",
+        "title": "Budget Planner",
+        "companyName": "FinanceWise",
+        "id": 9,
+        "description": "Manage your finances and budget effectively.",
+        "size": 16,
+        "reviews": 700,
+        "ratingAvg": 4.0,
+        "downloads": 20000,
+        "ratings": [
+            { "name": "1 star", "count": 50 },
+            { "name": "2 star", "count": 100 },
+            { "name": "3 star", "count": 200 },
+            { "name": "4 star", "count": 250 },
+            { "name": "5 star", "count": 100 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/ohKnf65dEeWogq4fNtF-vPUq2Dwyn0yFS-5YIzme_oL1dTz7vKQFqIJCs86F6fwOjPsXiP8wOCYs4Gg7_l35dg=w240-h480-rw",
+        "title": "Travel Guide",
+        "companyName": "Wanderlust",
+        "id": 10,
+        "description": "Plan your trips with detailed guides.",
+        "size": 28,
+        "reviews": 1300,
+        "ratingAvg": 4.5,
+        "downloads": 55000,
+        "ratings": [
+            { "name": "1 star", "count": 40 },
+            { "name": "2 star", "count": 80 },
+            { "name": "3 star", "count": 160 },
+            { "name": "4 star", "count": 400 },
+            { "name": "5 star", "count": 620 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/S76GphUu2pZa249td2Bb4XAhLcPRrFdL1zp_5qU1ouukvRq9r0-8jJ-CruaTtdT6g84=w240-h480-rw",
+        "title": "Meditation App",
+        "companyName": "Mindful Living",
+        "id": 11,
+        "description": "Relax and meditate with guided sessions.",
+        "size": 12,
+        "reviews": 600,
+        "ratingAvg": 4.3,
+        "downloads": 18000,
+        "ratings": [
+            { "name": "1 star", "count": 20 },
+            { "name": "2 star", "count": 50 },
+            { "name": "3 star", "count": 100 },
+            { "name": "4 star", "count": 200 },
+            { "name": "5 star", "count": 230 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/bAR-n9nd5KJ9qniTr_sXlAVi9lQZc46qb5wfFv8Cct-aWcaOptFYUjz6YmGJjWpH2g=w240-h480-rw",
+        "title": "News Reader",
+        "companyName": "InfoStream",
+        "id": 12,
+        "description": "Stay updated with the latest news.",
+        "size": 24,
+        "reviews": 1400,
+        "ratingAvg": 4.2,
+        "downloads": 45000,
+        "ratings": [
+            { "name": "1 star", "count": 45 },
+            { "name": "2 star", "count": 90 },
+            { "name": "3 star", "count": 180 },
+            { "name": "4 star", "count": 360 },
+            { "name": "5 star", "count": 725 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/R0qgNDYYHbRhw6JFsdEbDMqONplEvJx0m0W9wzYVvY3eNF1c2rfBWYjQxW0sLEzFe1E=w240-h480-rw",
+        "title": "Puzzle Game",
+        "companyName": "GameMasters",
+        "id": 13,
+        "description": "Challenge your mind with fun puzzles.",
+        "size": 50,
+        "reviews": 2200,
+        "ratingAvg": 4.7,
+        "downloads": 120000,
+        "ratings": [
+            { "name": "1 star", "count": 30 },
+            { "name": "2 star", "count": 60 },
+            { "name": "3 star", "count": 120 },
+            { "name": "4 star", "count": 600 },
+            { "name": "5 star", "count": 1390 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/cshtf7MBtmCo5hOjigtUOLgpCcx-ZkQ_eisfmSvK0QZBKSG5bp4MEIH9iqdGYWnUK0B1bEc6iQ10p7WVZYVW7A=w240-h480-rw",
+        "title": "Video Editor",
+        "companyName": "MediaPro",
+        "id": 14,
+        "description": "Edit videos with professional features.",
+        "size": 60,
+        "reviews": 1900,
+        "ratingAvg": 4.4,
+        "downloads": 70000,
+        "ratings": [
+            { "name": "1 star", "count": 50 },
+            { "name": "2 star", "count": 100 },
+            { "name": "3 star", "count": 200 },
+            { "name": "4 star", "count": 500 },
+            { "name": "5 star", "count": 1050 }
+        ]
+    },
+    {
+        "image": "https://play-lh.googleusercontent.com/n5IlYt9jRkNe3cA_aFq42plGz9BP1oH9tvh_LHi4w7s5BZhN_yzrio9jubsR3Jpqqk5a=w240-h480-rw",
+        "title": "Social Network",
+        "companyName": "ConnectUs",
+        "id": 15,
+        "description": "Connect with friends and share moments.",
+        "size": 45,
+        "reviews": 2500,
+        "ratingAvg": 4.1,
+        "downloads": 150000,
+        "ratings": [
+            { "name": "1 star", "count": 100 },
+            { "name": "2 star", "count": 200 },
+            { "name": "3 star", "count": 400 },
+            { "name": "4 star", "count": 800 },
+            { "name": "5 star", "count": 1000 }
+        ]
+    }
+]
